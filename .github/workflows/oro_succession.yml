@@ -3,9 +3,3 @@
         with:
           name: Orofiduciary-Signals
           path: Sovereign_Results/
-
-      - name: Archive Sovereign Signals
-        uses: actions/upload-artifact@v4
-        with:
-          name: Sovereign-Signals
-          path: Sovereign_Results/
