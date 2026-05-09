@@ -1,44 +1,10 @@
-name: ORO_Fiduciary_Architect_Rail
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  orofiduciary-analysis:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Orofiduciary Assets
-        uses: actions/checkout@v4
-
-      - name: Execute Senior Flow Filter
-        id: filter
-        run: |
-          echo "DFS Architect: Analyzing ORO Flow..."
-          mkdir -p Sovereign_Results
-          # Extraction logic for Orofiduciary data
-          grep -i "ORO" *.csv > Sovereign_Results/high_value_signals.txt || echo "No signals detected."
-          
-          if [ -s Sovereign_Results/high_value_signals.txt ]; then
-            echo "SIGNAL_FOUND=true" >> $GITHUB_OUTPUT
-          else
-            echo "SIGNAL_FOUND=false" >> $GITHUB_OUTPUT
-          fi
-          
-      - name: Orofiduciary Signal Alert
-        if: steps.filter.outputs.SIGNAL_FOUND == 'true'
-        run: |
-          echo "!!! OROFIDUCIARY SIGNAL DETECTED !!!"
-          echo "Targeting: 248-747-2030 / orofiduciary@yahoo.com"
-          cat Sovereign_Results/high_value_signals.txt
-
-      - name: Archive Fiduciary Reports
+- name: Archive Fiduciary Reports
         uses: actions/upload-artifact@v4
         with:
           name: Orofiduciary-Signals
           path: Sovereign_Results/
+
+      - name: Archive Sovereign Signals
         uses: actions/upload-artifact@v4
         with:
           name: Sovereign-Signals
