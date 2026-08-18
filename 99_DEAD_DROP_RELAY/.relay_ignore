@@ -1,0 +1,6 @@
+
+# Files that never leave the drop locally
+*.tmp
+*.log
+.DS_Store
+* copy*
