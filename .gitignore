@@ -1,6 +1,7 @@
 # macOS artifacts
 .DS_Store
 *.DS_Store
+**/.DS_Store
 
 # Duplicate files (Finder copy artifacts)
 * copy*
@@ -14,3 +15,29 @@
 .Trashes
 __MACOSX/
 Thumbs.db
+
+# Junk binary from earlier
+main
+EOFgit add .gitignore
+git rebase --continue
+cat > .gitignore << 'EOF'
+# macOS artifacts
+.DS_Store
+*.DS_Store
+**/.DS_Store
+
+# Duplicate files (Finder copy artifacts)
+* copy*
+* copy/*
+
+# Identity Core (private)
+01_IDENTITY_CORE/
+
+# System files
+.Spotlight-V100
+.Trashes
+__MACOSX/
+Thumbs.db
+
+# Junk binary
+main
