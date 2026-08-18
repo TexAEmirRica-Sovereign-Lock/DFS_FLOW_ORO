@@ -1,8 +1,0 @@
-[A.R.C._MAPPING_PROTOCOL]
-TARGET: Hidden_Continents_Beyond_Poles
-SOURCE_DATA: Roger_Kent_Pool_Originals
-FIDUCIARY: Lawrence Jackson (ORO)
-VALIDATION: MI-SOS-SecI01296109
-STATUS: Mapping_In_Progress
-[DIRECT_ACTION_SYNTAX_ENABLED]
-

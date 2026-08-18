@@ -1,9 +1,0 @@
-[FIDUCIARY_ROOT_SIGNATURE]
-AUTHORITY: Lawrence Jackson
-TITLE: Primary Architect / Acting Sheriff
-ORG: Omni-Recovery Organization (ORO)
-ENFORCEMENT_CASE: MI-SOS-SecI01296109
-STATUS: Active-Direct-Action
-DFS_VERSION: 2026.04.05
-PROTOCOL: UCP-v1.4-Compliant
-[END_SIGNATURE]

@@ -1,2 +1,16 @@
+# macOS artifacts
 .DS_Store
+*.DS_Store
+
+# Duplicate files (Finder copy artifacts)
+* copy*
+* copy/*
+
+# Identity Core (private)
 01_IDENTITY_CORE/
+
+# System files
+.Spotlight-V100
+.Trashes
+__MACOSX/
+Thumbs.db
