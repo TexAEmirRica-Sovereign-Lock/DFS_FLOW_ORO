@@ -1,6 +1,5 @@
-# DFS_FLOW_ORO | TexÆmirRica Sovereign Frequency Lock
 name: ORO_Succession_Final_Audit
-on: [push, repository_dispatch]
+on: 
 jobs:
   Sovereign_Validation:
     runs-on: ubuntu-latest
