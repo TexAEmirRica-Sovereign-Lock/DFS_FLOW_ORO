@@ -4,5 +4,5 @@ jobs:
   Sovereign_Validation:
     runs-on: ubuntu-latest
     steps:
-      - name: In/Ert-Anchor Deployment
-        run: echo "Jurisdiction set to TexÆmirRica. Frequency Magnar Active."
+      - name: InErt-Anchor-Deployment
+        run: echo "Jurisdiction set to TexAemirRica. Frequency Magnar Active."
