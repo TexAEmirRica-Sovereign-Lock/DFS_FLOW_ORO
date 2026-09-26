@@ -1,5 +1,6 @@
 name: ORO_Succession_Final_Audit
-on: 
+on:
+  workflow_dispatch:
 jobs:
   Sovereign_Validation:
     runs-on: ubuntu-latest
